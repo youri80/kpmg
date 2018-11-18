@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
     <Folder Include="Services\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,4 +15,8 @@
     <PackageReference Include="EPPlus" Version="4.5.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Services\Configurtion.cs" />
+    <Compile Remove="Services\TaskDataSet.cs" />
+  </ItemGroup>
 </Project>
